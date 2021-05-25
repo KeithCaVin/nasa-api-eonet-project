@@ -71,7 +71,7 @@ const TrackerPage = () => {
                     >
                       
                       <h2>Event: {allData.title}</h2>
-                      <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[0]}</strong> Y: <strong>{allData.geometry[0].coordinates[1]}</strong> </p>
+                      <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[1]}</strong> Y: <strong>{allData.geometry[0].coordinates[0]}</strong> </p>
                     </motion.div>
                   )
                 })
@@ -91,7 +91,7 @@ const TrackerPage = () => {
                     
                       >
                         <h2>Event: {allData.title}</h2>
-                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[0]}</strong> Y: <strong>{allData.geometry[0].coordinates[1]}</strong> </p>
+                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[1]}</strong> Y: <strong>{allData.geometry[0].coordinates[0]}</strong> </p>
                       </motion.div>
                     )
                   }
@@ -113,7 +113,7 @@ const TrackerPage = () => {
                     
                       >
                         <h2>Event: {allData.title}</h2>
-                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[0]}</strong> Y: <strong>{allData.geometry[0].coordinates[1]}</strong> </p>
+                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[1]}</strong> Y: <strong>{allData.geometry[0].coordinates[0]}</strong> </p>
                       </motion.div>
                     )
                   }
@@ -152,7 +152,7 @@ const TrackerPage = () => {
                     
                       >
                         <h2>Event: {allData.title}</h2>
-                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[0]}</strong> Y: <strong>{allData.geometry[0].coordinates[1]}</strong> </p>
+                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[1]}</strong> Y: <strong>{allData.geometry[0].coordinates[0]}</strong> </p>
                       </motion.div>
                     )
                   }
@@ -173,7 +173,7 @@ const TrackerPage = () => {
                     
                       >
                         <h2>Event: {allData.title}</h2>
-                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[0]}</strong> Y: <strong>{allData.geometry[0].coordinates[1]}</strong> </p>
+                        <p>Coordinates : X: <strong>{allData.geometry[0].coordinates[1]}</strong> Y: <strong>{allData.geometry[0].coordinates[0]}</strong> </p>
                       </motion.div>
                     )
                   }
