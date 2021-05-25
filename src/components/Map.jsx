@@ -1,16 +1,20 @@
-import React from 'react';
+import {useState} from 'react';
 import GoogleMapReact from 'google-map-react';
 import WildfireMarker from './WildfireMarker';
 import VolcanicEruptionMarker from './VolcanicEruptionMarker';
 import GlacierMeltMarker from './GlacierMelt';
 import SevereStormMarker from './SevereStorm';
+import LocationInfoBox from './LocationInfoBox';
 
 const Map = ({eventData,center,zoom}) => {
+    const [locationInfo, setLocationInfo] = useState("null");
 
     /// wfev = wildfire event
     const wildfireMapMarkers=eventData.map(wfev => {
         if(wfev.categories[0].id === "wildfires"){
-            return <WildfireMarker lat={wfev.geometry[0].coordinates[1]} lng={wfev.geometry[0].coordinates[0]} />;
+            return <WildfireMarker lat={wfev.geometry[0].coordinates[1]} lng={wfev.geometry[0].coordinates[0]} 
+            onClick={() =>setLocationInfo({title:wfev.title, x:wfev.geometry[0].coordinates[1], y:wfev.geometry[0].coordinates[0]})}
+            />;
         }
     }) ;
 
@@ -20,12 +24,17 @@ const Map = ({eventData,center,zoom}) => {
 
             if(veev.geometry[0].type === "Polygon"){
                 
-                return <VolcanicEruptionMarker lat={veev.geometry[0].coordinates[0][0][1]} lng={veev.geometry[0].coordinates[0][0][0]} />;
+                return <VolcanicEruptionMarker lat={veev.geometry[0].coordinates[0][0][1]} lng={veev.geometry[0].coordinates[0][0][0]} 
+                onClick={() =>setLocationInfo({title:veev.title, x:veev.geometry[0].coordinates[0][0][1], y:veev.geometry[0].coordinates[0][0][0]})}
+                />;
             }
             else
             {
 
-                return <VolcanicEruptionMarker lat={veev.geometry[0].coordinates[1]} lng={veev.geometry[0].coordinates[0]}/>;
+                return <VolcanicEruptionMarker lat={veev.geometry[0].coordinates[1]} lng={veev.geometry[0].coordinates[0]}
+                onClick={() =>setLocationInfo({title:veev.title, x:veev.geometry[0].coordinates[1], y:veev.geometry[0].coordinates[0]})}
+
+                />;
             }
            
         }
@@ -34,14 +43,20 @@ const Map = ({eventData,center,zoom}) => {
     /// gmev = glacier melt event
     const glacierMeltMapMarkers = eventData.map(gmev =>{
         if(gmev.categories[0].id === "seaLakeIce"){
-            return <GlacierMeltMarker lat={gmev.geometry[0].coordinates[1]} lng={gmev.geometry[0].coordinates[0]}/>;
+            return <GlacierMeltMarker lat={gmev.geometry[0].coordinates[1]} lng={gmev.geometry[0].coordinates[0]}
+            onClick={() =>setLocationInfo({title:gmev.title, x:gmev.geometry[0].coordinates[1], y:gmev.geometry[0].coordinates[0]})}
+
+            />;
         }
     });
 
-      /// stev = severe storm event
-      const severeStormMapMarkers = eventData.map(stev =>{
+    /// stev = severe storm event
+    const severeStormMapMarkers = eventData.map(stev =>{
         if(stev.categories[0].id === "severeStorms"){
-            return <SevereStormMarker lat={stev.geometry[0].coordinates[1]} lng={stev.geometry[0].coordinates[0]}/>;
+            return <SevereStormMarker lat={stev.geometry[0].coordinates[1]} lng={stev.geometry[0].coordinates[0]}
+            onClick={() =>setLocationInfo({title:stev.title, x:stev.geometry[0].coordinates[1], y:stev.geometry[0].coordinates[0]})}
+
+            />;
         }
     });
 
@@ -57,6 +72,7 @@ const Map = ({eventData,center,zoom}) => {
                 {glacierMeltMapMarkers}
                 {severeStormMapMarkers}
             </GoogleMapReact>
+            {locationInfo && <LocationInfoBox info={locationInfo}/>}
         </div>
     )
 }
