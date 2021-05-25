@@ -1,0 +1,17 @@
+
+
+@import './styles/header';
+@import './styles/map';
+@import './styles/marker-styles';
+@import './styles/home-page-styles';
+@import './styles/tracker-details-styles';
+@font-face {
+    font-family: 'BellMT';
+    src: url('./styles/fonts/BellMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
