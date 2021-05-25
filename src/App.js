@@ -15,9 +15,10 @@ function App() {
         <Header/> 
 
         <AnimatePresence exitBeforeEnter>
-          
-          <Route path="/nasa-api-eonet-project" component={Home} exact/>
-          <Route path="/nasa-api-eonet-project/tracker" component={TrackerPage}/>
+          <Switch>
+            <Route path="/nasa-api-eonet-project" component={Home} exact/>
+            <Route path="/nasa-api-eonet-project/tracker" component={TrackerPage}/>
+          </Switch>
         </AnimatePresence>
         
       </div>
