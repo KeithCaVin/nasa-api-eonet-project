@@ -14,7 +14,7 @@ const TrackerPage = () => {
   useEffect(() => {
     const fetchWildfireEvent= async () => {
      
-      const res = await fetch('https://eonet.sci.gsfc.nasa.gov/api/v3/events');
+      const res = await fetch('https://eonet.gsfc.nasa.gov/api/v3/events');
       const {events} = await res.json();
 
       setEventData(events);
