@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/nasa-api-eonet-project/static/css/main.ba0d1e9c.chunk.css",
+    "main.js": "/nasa-api-eonet-project/static/js/main.9d467506.chunk.js",
+    "main.js.map": "/nasa-api-eonet-project/static/js/main.9d467506.chunk.js.map",
+    "runtime-main.js": "/nasa-api-eonet-project/static/js/runtime-main.8f30ee84.js",
+    "runtime-main.js.map": "/nasa-api-eonet-project/static/js/runtime-main.8f30ee84.js.map",
+    "static/js/2.cf5b6aa2.chunk.js": "/nasa-api-eonet-project/static/js/2.cf5b6aa2.chunk.js",
+    "static/js/2.cf5b6aa2.chunk.js.map": "/nasa-api-eonet-project/static/js/2.cf5b6aa2.chunk.js.map",
+    "static/js/3.d14ee66b.chunk.js": "/nasa-api-eonet-project/static/js/3.d14ee66b.chunk.js",
+    "static/js/3.d14ee66b.chunk.js.map": "/nasa-api-eonet-project/static/js/3.d14ee66b.chunk.js.map",
+    "index.html": "/nasa-api-eonet-project/index.html",
+    "static/css/main.ba0d1e9c.chunk.css.map": "/nasa-api-eonet-project/static/css/main.ba0d1e9c.chunk.css.map",
+    "static/js/2.cf5b6aa2.chunk.js.LICENSE.txt": "/nasa-api-eonet-project/static/js/2.cf5b6aa2.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/nasa-api-eonet-project/static/media/BellMT.b119ed94.ttf",
+    "static/media/Glacier_img.9f4e07e5.png": "/nasa-api-eonet-project/static/media/Glacier_img.9f4e07e5.png",
+    "static/media/Storm_img.8ec0fdb5.png": "/nasa-api-eonet-project/static/media/Storm_img.8ec0fdb5.png",
+    "static/media/Volcanoes_img.0abaebf7.png": "/nasa-api-eonet-project/static/media/Volcanoes_img.0abaebf7.png",
+    "static/media/Wildfire_img.e775ca52.png": "/nasa-api-eonet-project/static/media/Wildfire_img.e775ca52.png",
+    "static/media/arrow.605f086d.png": "/nasa-api-eonet-project/static/media/arrow.605f086d.png",
+    "static/media/glacier_icon.2214e3fc.png": "/nasa-api-eonet-project/static/media/glacier_icon.2214e3fc.png",
+    "static/media/severe_storm_icon.b47b48c2.png": "/nasa-api-eonet-project/static/media/severe_storm_icon.b47b48c2.png",
+    "static/media/volcanic_eruption_icon.eb454834.png": "/nasa-api-eonet-project/static/media/volcanic_eruption_icon.eb454834.png",
+    "static/media/wildfire_icon.fe949f65.png": "/nasa-api-eonet-project/static/media/wildfire_icon.fe949f65.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f30ee84.js",
+    "static/js/2.cf5b6aa2.chunk.js",
+    "static/css/main.ba0d1e9c.chunk.css",
+    "static/js/main.9d467506.chunk.js"
+  ]
+}
